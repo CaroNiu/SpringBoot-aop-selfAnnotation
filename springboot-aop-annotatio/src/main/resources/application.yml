@@ -1,0 +1,25 @@
+person:
+  name: niuheng
+  age: 10
+  map: {k1: v1,k2: v2}
+  list: [1,2,3]
+  dog: {name: 旺财,age: 2}
+
+debug: false
+---
+server:
+  port: 8080
+spring:
+  profiles:
+    active: test
+---
+server:
+  port: 8082
+spring:
+  profiles: dev
+---
+server:
+  port: 8083
+spring:
+  profiles: test
+---
